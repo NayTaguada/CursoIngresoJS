@@ -9,8 +9,7 @@ if(edad >= 18){
 
 alert("Es mayor de edad");
 
-}else{
-}
+} // En java script no es necesario un else
 
 
 }//FIN DE LA FUNCIÓN
