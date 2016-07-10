@@ -2,9 +2,9 @@ function Mostrar()
 {
 //tomo la edad  
 //var mesDelAño = document.getElementById('mes').value;
-var estado = document.getElementById('mes').selectedIndex;
-var option = document.getElementsByTagName('option')[estado].value;  // Para tomar la opcion por valor de strings
-switch (option){
+var estado = document.getElementById('mes').value;
+//var option = document.getElementsByTagName('option')[estado].value; 
+switch (estado){
 
 	case "Enero":
 		alert("Que comiences bien el año!");

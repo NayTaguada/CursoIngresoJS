@@ -4,10 +4,10 @@ function Mostrar()
 var mesDelAño = document.getElementById('mes').value;
 alert (mesDelAño);*/
 	
-var mes = document.getElementById('mes').selectedIndex;
-var option = document.getElementsByTagName('option')[mes].value;  
+var mes = document.getElementById('mes').value;
+//var option = document.getElementsByTagName('option')[mes].value;  
 
-switch(option){
+switch(mes){
 	
 	case "Febrero":
 		alert("Este mes no tiene mas de 29 dias");

@@ -5,15 +5,11 @@ var estado;
 var option;
 edad = document.getElementById('edad').value;
 edad = parseInt(edad);
-estado = document.getElementById('estadoCivil').selectedIndex;
-option = document.getElementsByTagName('option')[estado].value;
+estado = document.getElementById('estadoCivil').value;
 
-if (edad >= 18 && option == "Soltero"){
+if (edad >= 18 && estado == "Soltero"){
 	alert("Es soltero y no es menor");
-}else{
-
 }
 	
-
 
 }//FIN DE LA FUNCIÓN

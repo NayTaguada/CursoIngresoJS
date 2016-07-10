@@ -2,11 +2,11 @@ function Mostrar()
 {
 //tomo la edad  
 //var mesDelAño = document.getElementById('mes').value;
-var mes = document.getElementById('mes').selectedIndex;
-var option = document.getElementsByTagName('option')[mes].value;  
+var mes = document.getElementById('mes').value;
+//var option = document.getElementsByTagName('option')[mes].value;  
 //alert (mesDelAño);
 
-switch(option){
+switch(mes){
 
 	case "Agosto":
 	case "Julio":
