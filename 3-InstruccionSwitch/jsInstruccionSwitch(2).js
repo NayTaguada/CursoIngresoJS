@@ -4,7 +4,6 @@ function Mostrar()
 //var mesDelAño = document.getElementById('mes').value;
 var mes = document.getElementById('mes').value;
 //var option = document.getElementsByTagName('option')[mes].value;  
-//alert (mesDelAño);
 
 switch(mes){
 

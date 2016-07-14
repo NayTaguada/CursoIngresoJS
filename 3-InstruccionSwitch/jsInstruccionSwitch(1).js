@@ -2,13 +2,13 @@ function Mostrar()
 {
 //tomo la edad  
 //var mesDelAño = document.getElementById('mes').value;
-var estado = document.getElementById('mes').value;
+var mes = document.getElementById('mes').value;
 //var option = document.getElementsByTagName('option')[estado].value; 
-switch (estado){
+switch (mes){
 
 	case "Enero":
 		alert("Que comiences bien el año!");
-		break;
+	break;
 
 	case "Marzo":
 		alert("A clases!");
