@@ -131,6 +131,13 @@ switch (marca){
 precioNeto = precioBruto * descuento;
 document.getElementById('precioDescuento').value = precioNeto;
 
+	if (precioNeto >= 120){
+
+		precioNeto = precioNeto + ((precioNeto*10)/100);
+		alert("Usted pago "+precioNeto+"de IIBB");
+
+	}
+
 } // Finaliza funcion
 
 
