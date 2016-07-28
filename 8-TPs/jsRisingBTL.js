@@ -32,9 +32,14 @@ function ComenzarIngreso ()
  		estadoCivil = prompt("Ingrese estado civil, utilizando 1, 2, 3 o 4");
  		}
 
- 		while(estadoCivil>= 1 || estadoCivil<5){
+ 		while(estadoCivil<= 1 || estadoCivil>5){ 
 
- 			switch(estadoCivil){
+ 			estadoCivil = prompt("Ingrese un estado civil correcto");
+ 			break;
+
+ 		} 
+
+ 		switch(estadoCivil){
 
  				case 1:
  				estadoCivil = "Soltero";
@@ -54,19 +59,53 @@ function ComenzarIngreso ()
 
  			}
 
+ 	var sueldoBruto = prompt("Ingrese sueldo bruto, mayor a 8000");
+
+ 	while(isNaN(sueldoBruto)){
+ 		sueldoBruto = prompt("Ingrese estado civil, utilizando 1, 2, 3 o 4");
  		}
 
- 	var sueldoBruto = prompt("Ingrese sueldo bruto, mayor a 8000");
+ 		while(sueldoBruto < 8000){
+ 			sueldoBruto = prompt("Ingrese un sueldo bruto mayor a 8000");
+ 			break;
+ 		}
+
  	var nLegajo = prompt("Ingrese numero de legajo");
+
+ 		while(isNaN(nLegajo)){
+ 		nLegajo = prompt("Ingrese el numero de legajo en numeros");
+ 		}
+
+ 		while(nLegajo>0000 || nLegajo<1000){
+ 			nLegajo = prompt("Ingrese un numero de legajo correcto");
+ 			break;
+ 		}
+
+
  	var nacionalidad = prompt("Ingrese nacionalidad, siendo A para argentinos, E para extranjeros y N para nacionalizados");
 
+ 	 while(!isNaN(nacionalidad)){
+ 	nacionalidad = prompt("Ingrese la nacionalidad con A, E o N");
+ 	}
 
+ 	while(nacionalidad != "A" || nacionalidad != "E" || nacionalidad != "N"){
+ 		nacionalidad = prompt("Ingrese una nacionalidad correcta");
+ 		break;
+ 	}
 
+	 	switch(nacionalidad){
+	 		case "A":
+	 		nacionalidad = "Argentino";
+	 		break;
 
+	 		case "E":
+	 		nacionalidad = "Extranjero";
+	 		break;
 
-
-
-
+	 		case "N":
+	 		nacionalidad = "Nacionalizado";
+	 		break;
+	 	}
 
  	document.getElementById('Edad').value = edad;
  	document.getElementById('Sexo').value = sexo;
