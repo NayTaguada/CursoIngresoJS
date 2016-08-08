@@ -23,7 +23,7 @@ function ComenzarIngreso ()
 
  		while(sexo != "M" && sexo != "F"){
  			sexo = prompt("Ingrese M si es masculino o F si es femenino");
- 			break;
+ 			
  		}
 
  	var estadoCivil = prompt("Ingrese estado civil");
@@ -32,32 +32,29 @@ function ComenzarIngreso ()
  		estadoCivil = prompt("Ingrese estado civil, utilizando 1, 2, 3 o 4");
  		}
 
- 		while(estadoCivil<= 1 || estadoCivil>5){ 
-
- 			estadoCivil = prompt("Ingrese un estado civil correcto");
- 			break;
-
- 		} 
-
- 		switch(estadoCivil){
-
- 				case 1:
- 				estadoCivil = "Soltero";
- 				break;
-
-	 			case 2: 
-	 			estadoCivil = "Casado";
+ 			switch(estadoCivil){
+	 			case 1:
+	 			estadoCivil = "Soltero";
+	 			alert(estadoCivil);
 	 			break;
 
-	 			case 3: 
-	 			estadoCivil = "Divorciado"
-	 			break;
+		 		case 2: 
+		 		estadoCivil = "Casado";
+		 		break;
 
-	 			case 4:
-	 			estadoCivil = "Viudo";
-	 			break;
+		 		case 3: 
+		 		estadoCivil = "Divorciado";
+		 		break;
 
+		 		case 4:
+		 		estadoCivil = "Viudo";
+		 		break;
  			}
+
+	 			while(estadoCivil< 1 || estadoCivil>4){ 
+	 				estadoCivil = prompt("Ingrese un estado civil correcto");
+	 			} 
+
 
  	var sueldoBruto = prompt("Ingrese sueldo bruto, mayor a 8000");
 
@@ -76,9 +73,9 @@ function ComenzarIngreso ()
  		nLegajo = prompt("Ingrese el numero de legajo en numeros");
  		}
 
- 		while(nLegajo>0000 || nLegajo<1000){
+ 		while(nLegajo<1000 || nLegajo>9999){
  			nLegajo = prompt("Ingrese un numero de legajo correcto");
- 			break;
+ 		
  		}
 
 
@@ -88,9 +85,9 @@ function ComenzarIngreso ()
  	nacionalidad = prompt("Ingrese la nacionalidad con A, E o N");
  	}
 
- 	while(nacionalidad != "A" || nacionalidad != "E" || nacionalidad != "N"){
+ 	while(nacionalidad != "A" && nacionalidad != "E" && nacionalidad != "N"){
  		nacionalidad = prompt("Ingrese una nacionalidad correcta");
- 		break;
+ 		
  	}
 
 	 	switch(nacionalidad){
